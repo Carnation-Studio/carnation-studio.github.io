@@ -1,0 +1,16 @@
+#laptop {
+  margin-bottom: 80px;
+	position: sticky;
+}
+#laptop img {
+  width: 100%;
+  max-width: 1920px;
+  height: 500px;
+  object-fit: cover;
+}
+#laptop .headline {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}

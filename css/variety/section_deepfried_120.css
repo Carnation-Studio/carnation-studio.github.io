@@ -1,0 +1,46 @@
+#phone {
+  background-image: url(/img/variety/Deep-Friedv120_on_imac_hdr.png);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+  margin-bottom: 45px;
+　position: sticky;
+}
+
+#phone .headline {
+  color: #ff0000;
+  font-size: 56px;
+  font-weight: bold;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#phone .subhead {
+  color: #ff6b6b;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  #phone {
+    background-image: url(/img/variety/Deep-Friedv120_on_imac_hdr.png);
+  }
+  #phone .headline {
+    font-size: 32px;
+  }
+  #phone .subhead {
+    font-size: 19px;
+    top: 88px;
+  }
+}

@@ -1,0 +1,294 @@
+#compare {
+	margin-bottom: 80px;
+}
+
+#compare .headline {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#compare .models {
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#compare .models:hover {
+	text-decoration: underline;
+}
+
+#compare .compare-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+#compare .item {
+	padding: 20px;
+	color: #ffffff;
+}
+
+#compare .item li {
+	font-size: 14px;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+#compare .item .item-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px 0;
+	color: #ffffff;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+	width: 100%;
+	background-color: #4a4a4a;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 20px 0;
+}
+
+#footer .text-area {
+	border-bottom: 1px solid #949494;
+}
+
+#footer .text-area p {
+	margin-bottom: 20px;
+}
+
+#footer .footer-menu {
+	display: flex;
+	border-bottom: 1px solid #d2d2d7;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+#footer .footer-menu .menu {
+	width: 25%;
+}
+
+#footer .footer-menu .title {
+	color: #ffffff;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#footer .footer-menu li {
+	margin-top: 10px;
+}
+
+#footer .footer-menu a {
+	color: #86868b;
+}
+
+#footer .footer-menu a:hover {
+	text-decoration: underline;
+}
+
+#footer .copyright {
+	font-size: 12px;
+}
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+	/*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+	#header .header-inner .logo {
+		z-index: 20;
+	}
+
+	#navi {
+		position: fixed;
+		background: #ffffff;
+		top: 0;
+		left: 0;
+		transform: translateY(-100%);
+		transition: all 0.6s;
+		z-index: 10;
+	}
+
+	#navi a {
+		font-size: 12px;
+		padding-left: 0;
+	}
+
+	#navi ul {
+		flex-direction: column;
+		padding: 44px 40px 0 40px;
+		text-align: left;
+	}
+
+	#navi ul li {
+		width: 100%;
+		border-bottom: solid 1px #ffffff;
+	}
+
+	#navi ul li:last-child {
+		border-bottom: none;
+	}
+
+	#navi.active {
+		transform: translateY(0%);
+	}
+
+	/*　ハンバーガーメニュー　*/
+	.hamburger {
+		width: 44px;
+		height: 44px;
+		display: block;
+		position: fixed;
+		top: 0;
+		right: 8px;
+		z-index: 20;
+		cursor: pointer;
+	}
+
+	.hamburger span {
+		width: 16px;
+		height: 1px;
+		background: #ffffff;
+		position: absolute;
+		left: 14px;
+		transition: 0.3s ease-in-out;
+	}
+
+	.hamburger span:nth-child(1) {
+		top: 18px;
+	}
+
+	.hamburger span:nth-child(2) {
+		top: 26px;
+	}
+
+	.hamburger.active span:nth-child(1) {
+		top: 22px;
+		transform: rotate(-45deg);
+	}
+
+	.hamburger.active span:nth-child(2) {
+		top: 22px;
+		transform: rotate(45deg);
+	}
+
+	.hamburger {
+		cursor: pointer;
+		display: none;
+	}
+
+	.hamburger span {
+		display: block;
+		height: 2px;
+		margin-bottom: 5px;
+		background: #333;
+	}
+
+	#navi {
+		display: flex;
+	}
+
+	/*-------------------------------------------
+  Phone
+  -------------------------------------------*/
+	#phone {
+		background-image: url(../img/phone-sp.jpg);
+	}
+
+	#phone .headline {
+		font-size: 32px;
+	}
+
+	#phone .subhead {
+		font-size: 19px;
+		top: 88px;
+	}
+
+	/*-------------------------------------------
+  laptop
+  -------------------------------------------*/
+	#laptop .headline {
+		font-size: 32px;
+	}
+
+	/*-------------------------------------------
+  Compare
+  -------------------------------------------*/
+	#compare .headline {
+		font-size: 32px;
+	}
+
+	#compare .models {
+		font-size: 21px;
+	}
+
+	#compare .compare-list {
+		flex-wrap: wrap;
+	}
+
+	#compare .item {
+		width: 50%;
+		padding: 10px;
+	}
+
+	#compare .item .item-title {
+		font-size: 19px;
+	}
+
+	/*-------------------------------------------
+  Collection
+  -------------------------------------------*/
+	#collection {
+		grid-template-columns: 1fr;
+	}
+
+	#collection .item .headline {
+		font-size: 32px;
+	}
+
+	#collection .item .subhead {
+		font-size: 19px;
+	}
+
+	/*-------------------------------------------
+  フッター
+  -------------------------------------------*/
+	#footer .footer-menu {
+		flex-wrap: wrap;
+	}
+
+	#footer .footer-menu .menu {
+		width: 50%;
+	}
+}
+
+@media screen and(max-width: 767px) {
+	.hamburger {
+		display: block;
+	}
+
+	#navi {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		background-color: #fff;
+		width: 100%;
+		padding: 20px 0;
+		box-sizing: border-box;
+		top: 60px;
+		left: 0;
+	}
+
+	#navi.open {
+		display: flex;
+	}
+}
