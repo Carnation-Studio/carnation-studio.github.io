@@ -1,5 +1,6 @@
 /* 基本設定 */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -14,27 +15,38 @@ section {
   padding: 60px 0;
   box-sizing: border-box;
   overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 /* セクション内コンテンツ共通 */
 section > * {
+  width: 100%;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+  display: block;
 }
 
 /* 見出し共通スタイル */
 .headline {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
   padding-top: 20px;
+  text-align: center;
+  color: #000000;
 }
 
 .subhead {
-  font-size: 1.2rem;
+  font-size: 2.0rem;
   margin-bottom: 2rem;
+  text-align: center;
+  color: #101010;
 }
 
 /* ボタン共通スタイル */
@@ -52,10 +64,11 @@ section button {
   border-radius: 1000px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: block;
 }
 
 section button:hover {
-  background: #0077ED;
+  background: #0077ed;
 }
 
 /* 画像共通スタイル */
@@ -64,52 +77,27 @@ section picture {
   max-width: 1200px;
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
 
 section img {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
-/* Deep-Fried セクション */
-#df {
-  background-color: black;
-  color: white;
-  text-align: center;
+/* 各セクションのスタイル */
+#top, #next, #s3rd, #s4th {
+  position: relative;
+  padding: 80px 0;
 }
 
-#df .headline {
-  font-size: 3.5rem;
-  color: #ffffff;
-}
-
-#df .subhead {
-  font-size: 2.2rem;
-  color: #edf9ea;
-}
-
-#df picture {
-  max-width: 600px;
-}
-
-/* Monody セクション */
-#monody {
-  background-color: white;
-  color: black;
-  text-align: center;
-}
-
-#monody .headline {
-  font-size: 4.5rem;
-}
-
-#monody .subhead {
-  font-size: 2.2rem;
-  color: #002339;
-}
-
-#monody picture {
+#top picture,
+#next picture,
+#s3rd picture {
   max-width: 800px;
 }
 
@@ -124,35 +112,43 @@ section img {
   }
 
   .headline {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .subhead {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   section button {
     font-size: 20px;
     padding: 8px 24px;
-  }
-
-  #df .headline {
-    font-size: 2.5rem;
-  }
-
-  #df .subhead {
-    font-size: 1.5rem;
-  }
-
-  #monody .headline {
-    font-size: 2.5rem;
-  }
-
-  #monody .subhead {
-    font-size: 1.5rem;
+    width: auto;
   }
 
   section picture {
     max-width: 100%;
+  }
+
+  section img {
+    border-radius: 35px;
+  }
+}
+
+/* タブレット対応 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  .headline {
+    font-size: 3rem;
+  }
+
+  .subhead {
+    font-size: 1.8rem;
+  }
+
+  section picture {
+    max-width: 90%;
   }
 }

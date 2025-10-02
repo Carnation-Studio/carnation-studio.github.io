@@ -1,8 +1,21 @@
 #header {
-  width: 100%;
-  background-color: #ffffff;
-  position: fixed;
-  z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.98);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#header.hide {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+#header.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 #header .header-inner {
   height: 44px;

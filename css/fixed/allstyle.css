@@ -4,8 +4,8 @@ html {
   font-size: 100%;
 }
 body {
-  font-family: "ヒラギノ角ゴ Pro W3", "Meiryo", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  background-color: #000000;
+  font-family: -apple-system,"ヒラギノ角ゴ Pro W3", "Meiryo", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: #ffffff;
 font-size:18px;
 }
 a {
@@ -39,3 +39,19 @@ li {
   text-decoration: underline;
 }
 
+button{
+font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    border-style: solid;
+    border-width: 1px;
+    min-width: 28px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    --sk-button-margin-horizontal: 18px;
+    --sk-button-margin-vertical: 18px;
+    border-color: transparent;
+}
