@@ -70,6 +70,7 @@ section img {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius:70px;
 }
 
 /* Deep-Fried セクション */
